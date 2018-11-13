@@ -28,4 +28,6 @@ export const MY_FORMATS = {
 export class AppComponent {
   title = 'datepicker-input-check';
   date = new FormControl(moment());
+  // minDate is the start of today.
+  minDate = new Date(new Date().setHours(0, 0, 0, 0));
 }
